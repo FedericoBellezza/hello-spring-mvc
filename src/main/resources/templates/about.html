@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="bg-secondary m-3 rounded p-3 text-white">
-      <h1>Questa è la pagina About</h1>
-      <h2 th:text="${parametro}"></h2>
+    <div
+      class="bg-linear-to-bl from-purple-500 to-pink-500 m-5 rounded-2xl p-10 text-white font-bold"
+    >
+      <h1 class="text-5xl mb-3">Questa è la pagina About 💌</h1>
+      <h2 class="text-4xl italic" th:text="${parametro}"></h2>
     </div>
   </body>
 </html>
