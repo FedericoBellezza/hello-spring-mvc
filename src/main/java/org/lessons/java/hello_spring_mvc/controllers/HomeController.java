@@ -21,7 +21,9 @@ public class HomeController {
     }
 
     @GetMapping("/about")
-    public String about() {
+    public String about(Model model) {
+        model.addAttribute("parametro", "parametro in pagina About passato con Model");
+
         return "about";
     }
     
